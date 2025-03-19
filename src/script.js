@@ -11,44 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Navigation
-  const navLinks = document.querySelectorAll('a[href^="#"]');
-  const sections = document.querySelectorAll('.section');
-  
-  navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      // Remove active class from all links
-      navLinks.forEach(link => link.classList.remove('active'));
-      
-      // Add active class to clicked link
-      this.classList.add('active');
-      
-      // Hide all sections
-      sections.forEach(section => section.classList.remove('active'));
-      
-      // Show corresponding section
-      const targetId = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetId);
-      if (targetSection) {
-        targetSection.classList.add('active');
-      }
-      
-      // Close mobile menu if open
-      if (mobileMenuBtn && mobileNav) {
-        mobileMenuBtn.classList.remove('active');
-        mobileNav.classList.remove('active');
-      }
-      
-      // Scroll to top
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  });
-  
   // Filter buttons
   const filterBtns = document.querySelectorAll('.filter-btn');
   
@@ -146,4 +108,13 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Login button
+  const loginBtn = document.querySelector('.login-btn');
+  
+  if (loginBtn) {
+    loginBtn.addEventListener('click', function() {
+      alert('Logging out. In a real application, this would redirect to the login page.');
+    });
+  }
 });

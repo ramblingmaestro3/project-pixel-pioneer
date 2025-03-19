@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scripta Health - Appointments</title>
+    <meta name="description" content="Pharmacy Healthcare Management System" />
+    <meta name="author" content="Scripta Health" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script src="/src/script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Header Navigation -->
+      <header class="header">
+        <div class="header-container">
+          <div class="logo">
+            <h1>Scripta Health</h1>
+          </div>
+          <nav class="desktop-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="appointments.html" class="active">Appointments</a></li>
+              <li><a href="prescriptions.html">Prescriptions</a></li>
+              <li><a href="medical-records.html">Medical Records</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </nav>
+          <button class="login-btn">Log Out</button>
+          <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Mobile Navigation -->
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="appointments.html" class="active">Appointments</a></li>
+          <li><a href="prescriptions.html">Prescriptions</a></li>
+          <li><a href="medical-records.html">Medical Records</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Appointments Section -->
+        <section id="appointments" class="section active">
+          <div class="container">
+            <h2>Your Appointments</h2>
+            <button class="new-btn">New Appointment</button>
+            <div class="appointments-list">
+              <div class="appointment-card">
+                <div class="appointment-date">
+                  <span class="month">JUN</span>
+                  <span class="day">15</span>
+                </div>
+                <div class="appointment-details">
+                  <h3>Dr. Sarah Johnson</h3>
+                  <p>General Check-up</p>
+                  <p class="time">10:00 AM - 11:00 AM</p>
+                </div>
+                <div class="appointment-actions">
+                  <button class="reschedule-btn">Reschedule</button>
+                  <button class="cancel-btn">Cancel</button>
+                </div>
+              </div>
+              <div class="appointment-card">
+                <div class="appointment-date">
+                  <span class="month">JUN</span>
+                  <span class="day">22</span>
+                </div>
+                <div class="appointment-details">
+                  <h3>Dr. Michael Chen</h3>
+                  <p>Cardiology Follow-up</p>
+                  <p class="time">2:30 PM - 3:30 PM</p>
+                </div>
+                <div class="appointment-actions">
+                  <button class="reschedule-btn">Reschedule</button>
+                  <button class="cancel-btn">Cancel</button>
+                </div>
+              </div>
+              <div class="appointment-card">
+                <div class="appointment-date">
+                  <span class="month">JUL</span>
+                  <span class="day">05</span>
+                </div>
+                <div class="appointment-details">
+                  <h3>Dr. Lisa Rodriguez</h3>
+                  <p>Annual Physical</p>
+                  <p class="time">9:00 AM - 10:30 AM</p>
+                </div>
+                <div class="appointment-actions">
+                  <button class="reschedule-btn">Reschedule</button>
+                  <button class="cancel-btn">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
